@@ -1,3 +1,4 @@
+# Git
 ## git convention
 
 | 태그이름 | 설명                                                  |
@@ -17,4 +18,23 @@
 [convention 명] : 커밋 내역
 
 ex ) [feat] : add chat feature
+```
+
+
+## git 사용 관련 
+
+feature branch 파실 때는 **develop**에서 작업해주세요
+
+```
+ git checkout develop  // develop 브랜치로 이동 
+ 
+ git pull // develop 브랜치 업데이트
+ 
+ git branch [convention]-[이슈번호]-[기능 이름]     // ex ) git branch feature/1-eslint-setting
+ 
+ git checkout [convention]-[이슈번호]-[기능 이름]
+ 
+ ( 기능에 관련된 작업 후 커밋 )
+ 
+ git push origin [convention]-[이슈번호]-[기능 이름]
 ```
