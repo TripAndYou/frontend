@@ -1,7 +1,8 @@
 import './index.css'
+import Routers from './router'
 
 function App() {
-  return <div className='text-lg'>hi</div>
+  return <Routers />
 }
 
 export default App
