@@ -12,6 +12,7 @@ const peopleList = [
 ]
 const Main = () => {
   const [people, setPeople] = useState({ name: '', age: 30 })
+  const [cards, setCards] = useState({ title: '', age: 30 })
 
   const changeName = () => {
     const firstPeople = peopleList[0]
