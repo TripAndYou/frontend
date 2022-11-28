@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { MainFilter } from '../../components'
 
 const peopleList = [
   {
@@ -12,12 +13,14 @@ const peopleList = [
 ]
 const Main = () => {
   const [people, setPeople] = useState({ name: '', age: 30 })
-  const [cards, setCards] = useState({ title: '', age: 30 })
 
   const changeName = () => {
     const firstPeople = peopleList[0]
 
     setPeople(firstPeople)
+  }
+  const onClickTaste = (event: React.MouseEvent<HTMLElement>) => {
+    console.log(event.target)
   }
 
   return (
@@ -30,9 +33,8 @@ const Main = () => {
         <div>
           <button>필터버튼</button>
         </div>
-        <div>
-          <div>자연</div>
-          <div>관광</div>
+        <div className='overflow-scroll'>
+          <MainFilter selects={['']} onClickTaste={onClickTaste} />
         </div>
       </div>
       <div>
