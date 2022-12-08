@@ -1,6 +1,6 @@
 const MainHeader = () => {
   return (
-    <header className='h-14 flex items-center justify-between  px-4'>
+    <header className='flex-center-between padding-lr-16'>
       <div>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -27,7 +27,7 @@ const MainHeader = () => {
           />
         </svg>
       </div>
-      <div className='h-14 flex items-center gap-7'>
+      <div className='flex-center-between gap-26'>
         <div>
           <svg
             xmlns='http://www.w3.org/2000/svg'

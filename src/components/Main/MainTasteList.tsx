@@ -1,8 +1,8 @@
 import { MainCardList } from '../../components'
 const MainTasteList = () => {
   return (
-    <section className='mb-8  px-4'>
-      <div className='flex items-center justify-between mb-8 '>
+    <section className='padding-lr-16'>
+      <div className='flex-center-between margin-b-16'>
         <div className='text-lg font-bold'>취향 추천 여행</div>
         <div>
           <svg
