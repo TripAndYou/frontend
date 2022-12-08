@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { MainFilter, MainHeader, MainTasteList, MainPopularityList } from '../../components'
 
 const peopleList = [
   {
@@ -18,13 +19,17 @@ const Main = () => {
 
     setPeople(firstPeople)
   }
+  const onClickTaste = (event: React.MouseEvent<HTMLElement>) => {
+    console.log(event.target)
+  }
 
   return (
-    <div>
-      <button onClick={changeName}>사람 이름 변경</button>
-      <h1>이름 :</h1>
-      <span>{people.name}</span>
-    </div>
+    <>
+      <MainHeader />
+      <MainFilter selects={['']} onClickTaste={onClickTaste} />
+      <MainTasteList />
+      <MainPopularityList />
+    </>
   )
 }
 
