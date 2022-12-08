@@ -26,7 +26,7 @@ export const SearchInput = Styled.input`
   position: relative;
   width: 100%;
   height: 100%;
-  background: #F5F5F5;
+  background: var(--color-neutral-200);
   padding: 0 16px;
 
   &:focus {
@@ -38,7 +38,7 @@ export const SearchInputLabel = Styled.label`
   position: absolute;
   top: 12px;
   left: 16px;
-  color: #999999;
+  color: var(--color-neutral-500);
   font-weight: bold;
   cursor: text;
 `
@@ -50,7 +50,7 @@ export const SearchInputLabelText = Styled.span`
   height: 24px;
   top: 0px;
   left: 28px;
-  color: #999999;
+  color: var(--color-neutral-500);
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -68,14 +68,14 @@ export const RecentSearchContainer = Styled.div`
   width: 100%;
   height: 170px;
   margin-top: 24px;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid var(--color-neutral-300);
 `
 
 export const SearchContentsTitle = Styled.h2`
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #222222;
+  color: var(--color-neutral-900);
 `
 export const RecentSearchResultContainer = Styled.div`
   display: flex;
@@ -93,7 +93,7 @@ export const RecentSearchResultText = Styled.span`
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: var(--color-neutral-800);
 `
 
 export const RecentSearchResultDeleteBtn = Styled.button`
@@ -120,7 +120,7 @@ export const AllSpotBtn = Styled.button`
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #666666;
+  color: var(--color-neutral-700);
   cursor: pointer;
 `
 
@@ -143,7 +143,7 @@ export const PopularSpotBtn = Styled.button`
   width: 106px;
   height: 44px;
   padding: 12px 16px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid var(--color-neutral-300);
   border-radius: 2px;
   display: flex;
   justify-content: center;
@@ -151,6 +151,6 @@ export const PopularSpotBtn = Styled.button`
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: var(--color-neutral-800);
   cursor: pointer;
 `
