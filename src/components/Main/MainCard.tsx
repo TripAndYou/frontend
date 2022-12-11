@@ -6,7 +6,7 @@ const MainCard = () => {
         alt=''
         className='h-full'
       />
-      <div className='absolute'>
+      <div className='absolute bottom-0'>
         <div>카페 2472</div>
         <div>제주・서귀포・카페 바다 스카이뷰</div>
       </div>

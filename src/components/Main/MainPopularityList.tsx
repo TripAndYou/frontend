@@ -1,7 +1,7 @@
 import { MainCardList } from '../../components'
 const MainPopularityList = () => {
   return (
-    <section className='mb-8  px-4'>
+    <section className='padding-lr-16'>
       <div className='flex items-center justify-between mb-8 '>
         <div className='text-lg font-bold'>인기 여행지</div>
         <div>

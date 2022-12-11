@@ -2,9 +2,9 @@
 import { MainFilterProps } from './types'
 
 const MainFilter = ({ selects, onClickTaste }: MainFilterProps) => {
-  const classStyle = 'w-max rounded-full bg-slate-300 p-2.5'
+  const classStyle = ''
   return (
-    <section className='flex items-center justify-start px-4'>
+    <section className='flex-center-start margint-tb-12 padding-lr-16  gap-8'>
       <div>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -19,8 +19,8 @@ const MainFilter = ({ selects, onClickTaste }: MainFilterProps) => {
           />
         </svg>
       </div>
-      <div className='overflow-scroll'>
-        <div className='flex flex-row w-max'>
+      <div className='width-100 over-hidden'>
+        <div className='flex-center-start max-width gap-8'>
           <div className={classStyle} onClick={onClickTaste}>
             카페
           </div>

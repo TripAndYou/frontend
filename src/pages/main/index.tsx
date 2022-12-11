@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { MainFilter, MainHeader, MainTasteList, MainPopularityList } from '../../components'
+import MainStyles from './MainStyles'
 
 const peopleList = [
   {
@@ -25,6 +26,7 @@ const Main = () => {
 
   return (
     <>
+      <MainStyles />
       <MainHeader />
       <MainFilter selects={['']} onClickTaste={onClickTaste} />
       <MainTasteList />
